@@ -1,0 +1,114 @@
+\documentclass[a4paper, 12pt]{article}  % Change to report, book, etc. if needed
+
+% Essential Packages
+\usepackage[utf8]{inputenc}   % Handle UTF-8 encoding
+\usepackage[T1]{fontenc}      % Proper font encoding
+\usepackage{lmodern}          % Modern font
+\usepackage{geometry}         % Page margins
+\geometry{margin=1in}        % Set 1-inch margins
+
+% Math and Symbols
+\usepackage{amsmath, amssymb} % Math symbols and environments
+\usepackage{physics}          % Common physics notation
+\usepackage{siunitx}          % SI unit formatting
+
+% Graphics and Figures
+\usepackage{graphicx}         % Image inclusion
+\usepackage{caption, subcaption} % Better figure captions
+\usepackage{float}            % Control float positioning
+
+% Tables
+\usepackage{booktabs}         % Better table formatting
+\usepackage{array}            % Extended table options
+
+
+
+% Title and Author
+\title{Spacecraft Mission}
+\author{Alex Freeman}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This report will cover all parts of assignment one in the Aerospace 720 course
+
+\section{Mathematics}
+To derive the necessary state function we have:
+\begin{equation}
+    \ddot{\mathbf{r}} = -\frac{\mu}{r^3} \mathbf{r}
+\end{equation}
+From here we know that $\frac{dv}{dt} = \dot{r}$ giving:
+\begin{equation}
+    \frac{d\mathbf{v}}{dt} = -\frac{\mu}{r^3} \mathbf{r}
+\end{equation}
+Expanding each vector as three-dimensional components in $x,y,z$:
+
+\begin{equation}
+    \frac{dx}{dt} = v_{x},  \frac{dy}{dt} = v_{y},   \frac{dz}{dt} = v_{z}
+\end{equation}
+
+
+\begin{equation}
+    \frac{dv_{x}}{dt} = -\frac{\mu}{r^3} x, \frac{dv_{y}}{dt} = -\frac{\mu}{r^3} y, \frac{dv_{z}}{dt} = -\frac{\mu}{r^3} z
+\end{equation}
+Where $r = \sqrt{x^{2} + y^{2} + z^{2}}$
+\newline
+We can now define a state vector $\mathbf{\bar{X}}$
+
+
+\begin{equation}
+    \mathbf{\bar{X}} = 
+    \begin{bmatrix}
+        x \\
+        y \\
+        z \\
+        v_x \\
+        v_y \\
+        v_z
+        \end{bmatrix}
+\end{equation}
+
+Finally, deriving this state vector gives the following:
+
+\begin{equation}
+    \mathbf{\dot{\bar{X}}} = 
+    \begin{bmatrix}
+        v_x \\
+        v_y \\
+        v_z \\
+        -\frac{\mu}{r^3} x \\
+        -\frac{\mu}{r^3} y \\
+        -\frac{\mu}{r^3} z
+        \end{bmatrix}
+\end{equation}
+
+
+
+\section{Figures}
+Figure example:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{example-image}
+    \caption{Example figure caption.}
+    \label{fig:example}
+\end{figure}
+
+\section{Tables}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{l c r}
+        \toprule
+        Left & Center & Right \\
+        \midrule
+        A & B & C \\
+        1 & 2 & 3 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Example table.}
+    \label{tab:example}
+\end{table}
+
+\end{document}
