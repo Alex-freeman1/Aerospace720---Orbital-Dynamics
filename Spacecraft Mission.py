@@ -14,7 +14,7 @@ from mpl_toolkits.mplot3d import Axes3D
 from scipy.integrate import solve_ivp
 from scipy import signal
 
-show_plots = True
+show_plots = False
 
 
 
@@ -573,11 +573,11 @@ w_imax = [all_elements_N[4,peak_indices[0]], all_elements_N[4,peak_indices[1]]]
 
 u_val = np.array(theta_imax) + np.array(w_imax)
 
-print(f"Maximum ∆i: {max_delta_i[0]:.4f} and {max_delta_i[1]:.4f} radians")
-print(f"Occurs at true anomaly θ = {theta_imax[0]:.2f} and {theta_imax[1]:.2f} radians")
-print(f"Here, ω = {w_imax[0]:.2f} and {w_imax[0]:.2f} radians")
-print(f"These represent a u value of {u_val[0]:.3f} and {u_val[1]:.3f}")
-print("Hence, maximum impact from impulse occurs at the preigee and apogee in the normal direction")
+# print(f"Maximum ∆i: {max_delta_i[0]:.4f} and {max_delta_i[1]:.4f} radians")
+# print(f"Occurs at true anomaly θ = {theta_imax[0]:.2f} and {theta_imax[1]:.2f} radians")
+# print(f"Here, ω = {w_imax[0]:.2f} and {w_imax[0]:.2f} radians")
+# print(f"These represent a u value of {u_val[0]:.3f} and {u_val[1]:.3f}")
+# print("Hence, maximum impact from impulse occurs at the preigee and apogee in the normal direction")
 labels = ['a (km)', 'e', 'i (rad)', 'RAAN (rad)', 'ω (rad)', 'θ (rad)']
 
 
@@ -595,13 +595,79 @@ if show_plots:
         plt.tight_layout()
         plt.show()
             
-        
+ #2.2.1 ----------------------------------------------------------------------
+       
+parking_altitude = 220
+parking_radius = parking_altitude + radius_earth
+
+
+
+radius_apogee = r_mean*np.arange(1.1, 1.4, 0.01)
+
+semi_major_axis = 0.5*(parking_radius + radius_apogee)
+#print(semi_major_axis)
+
+transfer_e = (radius_apogee-parking_radius)/(radius_apogee+parking_radius)
+
+
+cos_theta_A = (semi_major_axis * (1 - transfer_e**2) / r_mean - 1) / transfer_e
+
+
+#cos_theta_A = np.clip(cos_theta_A, -1.0, 1.0)
+
+
+theta_2 = np.arccos(cos_theta_A)
+
+
+semi_latus_rectum =  semi_major_axis * (1 - transfer_e**2)
+
+v_radial = np.sqrt(mu_earth / semi_latus_rectum) * transfer_e * np.sin(theta_2)
+v_transverse = np.sqrt(mu_earth / semi_latus_rectum) * (1 + transfer_e * np.cos(theta_2))
+
+normed_apogee = radius_apogee/r_mean
+
+if show_plots:
+    plt.plot(normed_apogee, v_radial, label="radial")
+    plt.legend()
+    plt.show()
+    plt.figure()
+    plt.plot(normed_apogee, v_transverse, label="transverse")
+    plt.legend()
+    plt.show()
+
+#2.2.2 ----------------------------------------------------------------------
+ 
+
+theta_eccentric = 2*np.arctan(np.tan(theta_2/2) * ((1-transfer_e)/(1+transfer_e))**(0.5))
+theta_mean = theta_eccentric - transfer_e*np.sin(theta_eccentric)
+time_total = time_orbit(semi_major_axis, mu_earth)
+
+delta_t = (time_total / (2 * np.pi)) * theta_mean / days_convert
+if show_plots:
+    plt.plot(normed_apogee, delta_t)
+    plt.axhline(3)
     
     
-    
-    
-    
-    
+#2.2.3 ----------------------------------------------------------------------
+ 
+
+
+v_moon = np.sqrt(mu_earth/r_mean)
+
+for i in range(v_radial.shape[0]):
+    #print(v_radial[i], v_transverse[i]-v_moon)
+    pass
+
+
+v_inf = np.sqrt(v_radial**2 + (v_transverse-v_moon)**2)
+
+#hyperbolic_e = 1 + v_inf**2 * 
+
+
+transfer_v = 
+
+
+
     
     
     
