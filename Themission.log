@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.31)  28 MAR 2025 21:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.31)  17 APR 2025 10:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -254,47 +254,77 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box62
 \@float@everytoks=\toks27
 \@floatcapt=\box63
+) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count290
+\lst@gtempboxa=\box64
+\lst@token=\toks28
+\lst@length=\count291
+\lst@currlwidth=\dimen173
+\lst@column=\count292
+\lst@pos=\count293
+\lst@lostspace=\dimen174
+\lst@width=\dimen175
+\lst@newlines=\count294
+\lst@lineno=\count295
+\lst@maxwidth=\dimen176
+ (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count296
+\lst@skipnumbers=\count297
+\lst@framebox=\box65
+) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
+ (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen173
-\lightrulewidth=\dimen174
-\cmidrulewidth=\dimen175
-\belowrulesep=\dimen176
-\belowbottomsep=\dimen177
-\aboverulesep=\dimen178
-\abovetopsep=\dimen179
-\cmidrulesep=\dimen180
-\cmidrulekern=\dimen181
-\defaultaddspace=\dimen182
-\@cmidla=\count290
-\@cmidlb=\count291
-\@aboverulesep=\dimen183
-\@belowrulesep=\dimen184
-\@thisruleclass=\count292
-\@lastruleclass=\count293
-\@thisrulewidth=\dimen185
+\heavyrulewidth=\dimen177
+\lightrulewidth=\dimen178
+\cmidrulewidth=\dimen179
+\belowrulesep=\dimen180
+\belowbottomsep=\dimen181
+\aboverulesep=\dimen182
+\abovetopsep=\dimen183
+\cmidrulesep=\dimen184
+\cmidrulekern=\dimen185
+\defaultaddspace=\dimen186
+\@cmidla=\count298
+\@cmidlb=\count299
+\@aboverulesep=\dimen187
+\@belowrulesep=\dimen188
+\@thisruleclass=\count300
+\@lastruleclass=\count301
+\@thisrulewidth=\dimen189
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 31.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 31.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 56.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 56.
  (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (Themission.aux)
 \openout1 = `Themission.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -330,29 +360,23 @@ LaTeX Font Info:    ... okay on input line 31.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
-Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
- (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 149.
-) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 31.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 56.
  (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count294
-\scratchdimen=\dimen186
-\scratchbox=\box64
-\nofMPsegments=\count295
-\nofMParguments=\count296
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count297
-\MPscratchDim=\dimen187
-\MPnumerator=\count298
-\makeMPintoPDFobject=\count299
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count302
+\scratchdimen=\dimen190
+\scratchbox=\box66
+\nofMPsegments=\count303
+\nofMParguments=\count304
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count305
+\MPscratchDim=\dimen191
+\MPnumerator=\count306
+\makeMPintoPDFobject=\count307
+\everyMPtoPDFconversion=\toks30
 ) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -361,63 +385,70 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 33.
+\c@lstlisting=\count308
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 58.
  (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 33.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 58.
  (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 33.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 58.
  (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 33.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 58.
  (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 33.
+(Font)              <14.4> on input line 58.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 33.
+(Font)              <10> on input line 58.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 33.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
+(Font)              <7> on input line 58.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
  (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
  (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 70.
+ (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 40.
+(Font)              <12> on input line 84.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 40.
+(Font)              <8> on input line 84.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 40.
-<example-image.pdf, id=1, 321.2pt x 240.9pt>
-File: example-image.pdf Graphic file (type pdf)
-<use example-image.pdf>
-Package pdftex.def Info: example-image.pdf  used on input line 94.
-(pdftex.def)             Requested size: 271.7835pt x 203.84332pt.
+(Font)              <6> on input line 84.
  [1
 
-{C:/Users/alexa/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2 <C:/Users/alexa/AppData/Local/Programs/MiKTeX/tex/latex/mwe/example-image.pdf>] (Themission.aux) ) 
+{C:/Users/alexa/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+<example-image.pdf, id=15, 321.2pt x 240.9pt>
+File: example-image.pdf Graphic file (type pdf)
+<use example-image.pdf>
+Package pdftex.def Info: example-image.pdf  used on input line 151.
+(pdftex.def)             Requested size: 271.7835pt x 203.84332pt.
+ [2 <C:/Users/alexa/AppData/Local/Programs/MiKTeX/tex/latex/mwe/example-image.pdf>] [3] (Themission.aux) ) 
 Here is how much of TeX's memory you used:
- 9737 strings out of 478582
- 205904 string characters out of 2844344
- 470243 words of memory out of 3000000
- 27809 multiletter control sequences out of 15000+600000
- 518484 words of font info for 69 fonts, out of 8000000 for 9000
+ 11587 strings out of 478582
+ 230532 string characters out of 2844344
+ 720836 words of memory out of 3000000
+ 29638 multiletter control sequences out of 15000+600000
+ 527789 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,8n,77p,443b,513s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on Themission.pdf (2 pages, 170901 bytes).
+ 71i,8n,77p,443b,1267s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
+Output written on Themission.pdf (3 pages, 205574 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
+ 81 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

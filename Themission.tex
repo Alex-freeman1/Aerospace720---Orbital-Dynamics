@@ -16,6 +16,31 @@
 \usepackage{graphicx}         % Image inclusion
 \usepackage{caption, subcaption} % Better figure captions
 \usepackage{float}            % Control float positioning
+\usepackage{listings}
+\usepackage{color}
+
+\lstset{language=Python}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
 
 % Tables
 \usepackage{booktabs}         % Better table formatting
@@ -32,8 +57,40 @@
 
 \maketitle
 
-\section{Introduction}
+
 This report will cover all parts of assignment one in the Aerospace 720 course
+
+\section{Orbital Propagation}
+
+\subsection{Solving Kepler's Equation}
+
+\textbf{I)} We need to solve Kepler's Equation using numerical methods. Using the Newton-Rasphon Method we can take the eccentricity and mean anamoly as 
+inputs and numerically solve for the eccentric anamoly. 
+
+\begin{lstlisting}
+    def Kepler(e, M, tol = 1e-12, max_i = 1000):
+    E = M                               # Guess solution
+    for i in range(max_i):
+        f_E = E - e * np.sin(E) - M     # Define the function in terms of f(E) = 0
+         f_prime = 1 - e * np.cos(E)    # Derive the function in terms of E
+        del_E = f_E / f_prime           
+        E_new = E - del_E               # Calculate the new eccentric anamoly
+        if np.abs(del_E) < tol:         # If the value is within the set tolerance 
+            theta = 2*np.arctan(np.tan(E_new/2) * ((1+e)/(1-e))**(0.5))
+            return theta                # Return true anamoly
+        E = E_new
+\end{lstlisting}
+
+\noindent \textbf{II)} If we set the tolerance to $1e-12$, we can compute the true anamoly of the asteroid 
+at $t_0$ and $t_0 + 100$ days. A\_ae0 is the OBJ data of the asteroid, it is an array.
+\begin{lstlisting}
+trueAnamoly_asteroidt_0 = Kepler(A_ae0[2], A_ae0[6])  
+meanAnamolyt_100 = get_mean_anamoly(100*(3600*24), A_ae0[6], A_ae0[1])
+trueAnamoly_asteroidt_100 = Kepler(A_ae0[2], meanAnamolyt_100)
+\end{lstlisting}
+Printing these values gives the following
+
+
 
 \section{Mathematics}
 To derive the necessary state function we have:

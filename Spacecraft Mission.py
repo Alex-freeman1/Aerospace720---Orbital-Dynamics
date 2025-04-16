@@ -602,7 +602,7 @@ parking_radius = parking_altitude + radius_earth
 
 
 
-radius_apogee = r_mean*np.arange(1.1, 1.4, 0.01)
+radius_apogee = r_mean*np.arange(1.1, 2, 0.01)
 
 semi_major_axis = 0.5*(parking_radius + radius_apogee)
 #print(semi_major_axis)
@@ -654,17 +654,28 @@ if show_plots:
 
 v_moon = np.sqrt(mu_earth/r_mean)
 
-for i in range(v_radial.shape[0]):
-    #print(v_radial[i], v_transverse[i]-v_moon)
-    pass
+v_ir = v_radial
+v_it = v_transverse-v_moon
+v_inf = np.sqrt(v_radial**2 + v_it**2)
 
 
-v_inf = np.sqrt(v_radial**2 + (v_transverse-v_moon)**2)
+delta_angle = 2* np.arctan(np.abs(v_it),v_ir)
+#print(delta_angle)
 
-#hyperbolic_e = 1 + v_inf**2 * 
+hyperbolic_e = (np.sin(0.5*delta_angle))**-1
+#print(hyperbolic_e)
 
+r_perilune = (hyperbolic_e - 1)*mu_moon/(v_inf**2)
 
-transfer_v = 
+#print(r_perilune)
+altitude_perilune = r_perilune - radius_moon
+
+plt.plot(delta_t, altitude_perilune)
+
+# If the radial velocity is flipped while the transverse velocity remains unchanged
+# Then the total turning angle, delta, is twice the angle between v_inf and the moon
+# in the radial direction
+
 
 
 
