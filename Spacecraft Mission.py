@@ -14,7 +14,7 @@ from mpl_toolkits.mplot3d import Axes3D
 from scipy.integrate import solve_ivp
 from scipy import signal
 
-show_plots = False
+show_plots = True
 
 
 

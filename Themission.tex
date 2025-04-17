@@ -24,7 +24,7 @@
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 
-\lstset{frame=tb,
+\lstset{frame=top,
   language=Python,
   aboveskip=3mm,
   belowskip=3mm,
@@ -68,7 +68,7 @@ This report will cover all parts of assignment one in the Aerospace 720 course
 inputs and numerically solve for the eccentric anamoly. 
 
 \begin{lstlisting}
-    def Kepler(e, M, tol = 1e-12, max_i = 1000):
+def Kepler(e, M, tol = 1e-12, max_i = 1000):
     E = M                               # Guess solution
     for i in range(max_i):
         f_E = E - e * np.sin(E) - M     # Define the function in terms of f(E) = 0
@@ -80,7 +80,7 @@ inputs and numerically solve for the eccentric anamoly.
             return theta                # Return true anamoly
         E = E_new
 \end{lstlisting}
-
+\vspace{0.5cm}
 \noindent \textbf{II)} If we set the tolerance to $1e-12$, we can compute the true anamoly of the asteroid 
 at $t_0$ and $t_0 + 100$ days. A\_ae0 is the OBJ data of the asteroid, it is an array.
 \begin{lstlisting}
@@ -88,11 +88,80 @@ trueAnamoly_asteroidt_0 = Kepler(A_ae0[2], A_ae0[6])
 meanAnamolyt_100 = get_mean_anamoly(100*(3600*24), A_ae0[6], A_ae0[1])
 trueAnamoly_asteroidt_100 = Kepler(A_ae0[2], meanAnamolyt_100)
 \end{lstlisting}
-Printing these values gives the following
+Printing these values gives that the true anamoly $\theta_{t_0} = 1.4246$ and $\theta_{t_0 + 100} = 2.1369$. 
+Where these answers are in radians.
 
+\vspace{0.5cm}
+\noindent \textbf{III)} Now I have created a function that takes in a state of orbital elements and returns 
+the position and velocity vectors at that point. It uses a rotation matrix to convert from 
+the perifocal frame to the ECI frame. This is defined via $i, \omega$, and $\Omega$ terms and is 
+calculated using the defind matricies in the appendix.
 
+\begin{lstlisting}   
+def COE2RV(arr, mu):
+    a, e, i, Omega, omega, theta_var = arr[0:6]
+    h = np.sqrt(mu * a * (1 - e**2))
+    r = a*(1-(e**2))/(1 + e*np.cos(theta_var))
 
-\section{Mathematics}
+    arr_r = np.array([r*np.cos(theta_var), r*np.sin(theta_var), 0])
+    arr_v = (mu/h)* np.array([-np.sin(theta_var), e + np.cos(theta_var), 0])
+
+    # Rotate position and velocity from perifocal to inertial frame using the 
+    # transfomration matrix
+    R_matrix = rotation_matrix(i, Omega, omega)
+
+    r_ijk = R_matrix @ arr_r
+    v_ijk = R_matrix @ arr_v
+    return r_ijk, v_ijk
+\end{lstlisting}
+Using this code we can output the state vector at some time $t$. The first three values 
+are the $x,y,z$ positions in \textbf{km}. The last three are the velocity values in the $x,y,z$ direction 
+in \textbf{km/s}.
+\[
+\begin{tabular}{c@{\hspace{2cm}}c}
+\textbf{At } $t_0$: &
+\textbf{At } $t_0 + 100$: \\
+$\mathbf{\bar{X}} =
+\begin{bmatrix}
+x = -1.1694365\mathrm{e}{+08} \\
+y =  1.53462780\mathrm{e}{+08} \\
+z = -6.7446087\mathrm{e}{+06} \\
+v_x = -3.1710203\mathrm{e}{+01} \\
+v_y = -3.6285380\mathrm{e}{+00} \\
+v_z = -1.8931546\mathrm{e}{+00}
+\end{bmatrix}$ &
+$\mathbf{\bar{X}} =
+\begin{bmatrix}
+x = -3.2057997\mathrm{e}{+08} \\
+y =  6.72659396\mathrm{e}{+07} \\
+z = -1.8991445\mathrm{e}{+07} \\
+v_x = -1.6964807\mathrm{e}{+01} \\
+v_y = -1.2943780\mathrm{e}{+01} \\
+v_z = -1.0284663\mathrm{e}{+00}
+\end{bmatrix}$
+\end{tabular}
+\]
+\textbf{IV)} Next, I have written a function called "Ephemeris". It returns the position and velocity at some time t.
+\begin{lstlisting}
+def Ephemeris(t, OBJdata, mu):
+
+    time, a, e, i, Omega, omega, mean_anamoly = OBJdata[0:7]
+    nu_t = (mu / (a**3))**0.5
+    mean_anamoly_t = mean_anamoly + nu_t * (t)
+    h = np.sqrt(mu * a * (1 - e**2))
+    theta_var = Kepler(e, mean_anamoly_t)
+    r = a*(1-(e**2))/(1 + e*np.cos(theta_var))
+    
+    arr_r = np.array([r*np.cos(theta_var), r*np.sin(theta_var), 0])
+    arr_v = (mu/h)* np.array([-np.sin(theta_var), e + np.cos(theta_var), 0])
+    
+    R_matrix = rotation_matrix(i, Omega, omega)
+    r_ijk = R_matrix @ arr_r
+    v_ijk = R_matrix @ arr_v
+    return r_ijk, v_ijk
+\end{lstlisting}
+
+\subsection{Numerical Integration}
 To derive the necessary state function we have:
 \begin{equation}
     \ddot{\mathbf{r}} = -\frac{\mu}{r^3} \mathbf{r}

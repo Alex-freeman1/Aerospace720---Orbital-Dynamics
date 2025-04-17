@@ -557,11 +557,11 @@ INPUT C:\Users\alexa\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\alexa\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\alexa\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\alexa\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+OUTPUT Themission.pdf
+INPUT C:\Users\alexa\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\alexa\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx12.tfm
 INPUT C:\Users\alexa\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx8.tfm
 INPUT C:\Users\alexa\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx6.tfm
-OUTPUT Themission.pdf
-INPUT C:\Users\alexa\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex\latex\mwe\example-image.tex
 INPUT C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex\latex\mwe\example-image.tex
 INPUT C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex\latex\mwe\example-image.tex
@@ -571,8 +571,8 @@ INPUT C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex\latex\mwe\example-image.p
 INPUT C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex\latex\mwe\example-image.pdf
 INPUT C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex\latex\mwe\example-image.pdf
 INPUT Themission.aux
-INPUT C:\Users\alexa\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Users\alexa\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
+INPUT C:\Users\alexa\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Users\alexa\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Users\alexa\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT C:\Users\alexa\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
