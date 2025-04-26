@@ -112,6 +112,11 @@ trueAnamoly_asteroidt_0 = Kepler(A_ae0[2], A_ae0[6])
 meanAnamolyt_100 = get_mean_anamoly(100*(3600*24), A_ae0[6], A_ae0[1])
 trueAnamoly_asteroidt_100 = Kepler(A_ae0[2], meanAnamolyt_100)
 
+# print(trueAnamoly_asteroidt_0)
+# print(trueAnamoly_asteroidt_100)
+
+
+
 Obj2_t0 = A_ae0.copy()
 Obj2_t0[6] = trueAnamoly_asteroidt_0
 Obj2_t0 = Obj2_t0[1:]
@@ -126,13 +131,8 @@ Obj2_t100 = Obj2_t100[1:]
 t_0 = 2460705.5*(3600*24)
 
 def COE2RV(arr, mu):
-    
-    
-    
     a, e, i, Omega, omega, theta_var = arr[0:6]
     h = np.sqrt(mu * a * (1 - e**2))
-    
-    
     r = a*(1-(e**2))/(1 + e*np.cos(theta_var))
     
     arr_r = np.array([r*np.cos(theta_var), r*np.sin(theta_var), 0])
@@ -149,12 +149,12 @@ def COE2RV(arr, mu):
 
 
 state_vector_0 = np.array(COE2RV(Obj2_t0, mu_sun))
-# print(state_vector_0) # t = t0
+print(state_vector_0) # t = t0
 
 
 
 state_vector_100 = np.array(COE2RV(Obj2_t100, mu_sun))
-#print(state_vector_100) # t = t0 + 100
+print(state_vector_100) # t = t0 + 100
 
 # print('\n')
 # print(state_vector_0 - state_vector_100)
@@ -166,14 +166,9 @@ days_convert = 3600*24
 def Ephemeris(t, OBJdata, mu):
 
     time, a, e, i, Omega, omega, mean_anamoly = OBJdata[0:7]
-    
-    time_0 = time * days_convert
     nu_t = (mu / (a**3))**0.5
-    # del_t = t - time
     mean_anamoly_t = mean_anamoly + nu_t * (t)
-    
-    
-    
+
     h = np.sqrt(mu * a * (1 - e**2))
     
     theta_var = Kepler(e, mean_anamoly_t)
@@ -182,19 +177,10 @@ def Ephemeris(t, OBJdata, mu):
     arr_r = np.array([r*np.cos(theta_var), r*np.sin(theta_var), 0])
     arr_v = (mu/h)* np.array([-np.sin(theta_var), e + np.cos(theta_var), 0])
     
-
     R_matrix = rotation_matrix(i, Omega, omega)
     r_ijk = R_matrix @ arr_r
     v_ijk = R_matrix @ arr_v
-    
-    x = r_ijk[0]
-    y = r_ijk[1]
-    z = r_ijk[2]
-    
-    vx = v_ijk[0]
-    vy = v_ijk[1]
-    vz = v_ijk[2]
-    return np.array([x, y, z]), np.array([vx, vy, vz]) 
+    return r_ijk, v_ijk
 
 
 years_shown_i = 1
