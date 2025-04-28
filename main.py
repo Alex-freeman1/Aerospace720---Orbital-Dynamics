@@ -483,9 +483,9 @@ def impulse(r_matrix, direct, initial_state):
 er = [1,0,0]
 et = [0,1,0]
 en = [0,0,1]
-print(impulse(rotate_matrix(X0), er, X0)[0])
-print(impulse(rotate_matrix(X0), et, X0)[0])
-print(impulse(rotate_matrix(X0), en, X0)[0])
+# print(impulse(rotate_matrix(X0), er, X0)[0])
+# print(impulse(rotate_matrix(X0), et, X0)[0])
+# print(impulse(rotate_matrix(X0), en, X0)[0])
 
 
 #2.1.4 ----------------------------------------------------------------------
@@ -532,11 +532,11 @@ w_imax = [all_elements_N[4,peak_indices[0]], all_elements_N[4,peak_indices[1]]]
 
 u_val = np.array(theta_imax) + np.array(w_imax)
 
-# print(f"Maximum ∆i: {max_delta_i[0]:.4f} and {max_delta_i[1]:.4f} radians")
-# print(f"Occurs at true anomaly θ = {theta_imax[0]:.2f} and {theta_imax[1]:.2f} radians")
-# print(f"Here, ω = {w_imax[0]:.2f} and {w_imax[0]:.2f} radians")
-# print(f"These represent a u value of {u_val[0]:.3f} and {u_val[1]:.3f}")
-# print("Hence, maximum impact from impulse occurs at the preigee and apogee in the normal direction")
+print(f"Maximum ∆i: {max_delta_i[0]:.4f} and {max_delta_i[1]:.4f} radians")
+print(f"Occurs at true anomaly θ = {theta_imax[0]:.2f} and {theta_imax[1]:.2f} radians")
+print(f"Here, ω = {w_imax[0]:.2f} and {w_imax[0]:.2f} radians")
+print(f"These represent a u value of {u_val[0]:.3f} and {u_val[1]:.3f}")
+print("Hence, maximum impact from impulse occurs at the preigee and apogee in the normal direction")
 labels = ['a (km)', 'e', 'i (rad)', 'RAAN (rad)', 'ω (rad)', 'θ (rad)']
 
 
@@ -561,7 +561,7 @@ parking_radius = parking_altitude + radius_earth
 
 
 
-radius_apogee = r_mean*np.arange(1.1, 2, 0.01)
+radius_apogee = r_mean*np.arange(1.1, 1.4, 0.01)
 
 semi_major_axis = 0.5*(parking_radius + radius_apogee)
 #print(semi_major_axis)
@@ -602,10 +602,10 @@ theta_mean = theta_eccentric - transfer_e*np.sin(theta_eccentric)
 time_total = time_orbit(semi_major_axis, mu_earth)
 
 delta_t = (time_total / (2 * np.pi)) * theta_mean / days_convert
-if show_plots:
-    plt.plot(normed_apogee, delta_t)
-    plt.axhline(3)
-    
+
+plt.plot(normed_apogee, delta_t)
+plt.axhline(3)
+plt.show()  
     
 #2.2.3 ----------------------------------------------------------------------
  
@@ -615,21 +615,24 @@ v_moon = np.sqrt(mu_earth/r_mean)
 
 v_ir = v_radial
 v_it = v_transverse-v_moon
-v_inf = np.sqrt(v_radial**2 + v_it**2)
+v_infminus = np.sqrt(v_radial**2 + v_it**2)
 
 
-delta_angle = 2* np.arctan(np.abs(v_it),v_ir)
+quotient = v_ir / -v_it
+delta_angle = np.arctan(quotient)
 #print(delta_angle)
 
-hyperbolic_e = (np.sin(0.5*delta_angle))**-1
+hyperbolic_e = (np.sin(delta_angle))**-1
 #print(hyperbolic_e)
 
-r_perilune = (hyperbolic_e - 1)*mu_moon/(v_inf**2)
+r_perilune = (hyperbolic_e - 1)*mu_moon/(v_infminus**2)
 
 #print(r_perilune)
 altitude_perilune = r_perilune - radius_moon
 
 plt.plot(delta_t, altitude_perilune)
+plt.show()
+
 
 # If the radial velocity is flipped while the transverse velocity remains unchanged
 # Then the total turning angle, delta, is twice the angle between v_inf and the moon
