@@ -559,39 +559,32 @@ if show_plots:
 parking_altitude = 220
 parking_radius = parking_altitude + radius_earth
 
-
-
 radius_apogee = r_mean*np.arange(1.1, 1.4, 0.01)
-
 semi_major_axis = 0.5*(parking_radius + radius_apogee)
-#print(semi_major_axis)
-
 transfer_e = (radius_apogee-parking_radius)/(radius_apogee+parking_radius)
-
-
 cos_theta_A = (semi_major_axis * (1 - transfer_e**2) / r_mean - 1) / transfer_e
-
-
-#cos_theta_A = np.clip(cos_theta_A, -1.0, 1.0)
-
-
 theta_2 = np.arccos(cos_theta_A)
-
-
 semi_latus_rectum =  semi_major_axis * (1 - transfer_e**2)
 
 v_radial = np.sqrt(mu_earth / semi_latus_rectum) * transfer_e * np.sin(theta_2)
 v_transverse = np.sqrt(mu_earth / semi_latus_rectum) * (1 + transfer_e * np.cos(theta_2))
-
 normed_apogee = radius_apogee/r_mean
 
+plt.figure()
+plt.plot(normed_apogee, theta_2, label="true anamoly")
+plt.grid(True)
+plt.xlabel("Normalized apogee")
+plt.ylabel("Angle (radians)")
+plt.title("True anamoly as a function of apogee distance")
+plt.show
 
+plt.figure()
 plt.plot(normed_apogee, v_radial, label="radial")
 plt.grid(True)
 plt.xlabel("Normalized apogee")
 plt.ylabel("Speed (km/s)")
 plt.title("Radial Velocity as a function of apogee distance")
-plt.show()
+plt.close()
 
 plt.figure()
 plt.plot(normed_apogee, v_transverse, label="transverse")
@@ -599,7 +592,7 @@ plt.grid(True)
 plt.xlabel("Normalized apogee")
 plt.ylabel("Speed (km/s)")
 plt.title("Transverse Velocity as a function of apogee distance")
-plt.show()
+plt.close()
 
 #2.2.2 ----------------------------------------------------------------------
  
@@ -607,7 +600,6 @@ plt.show()
 theta_eccentric = 2*np.arctan(np.tan(theta_2/2) * ((1-transfer_e)/(1+transfer_e))**(0.5))
 theta_mean = theta_eccentric - transfer_e*np.sin(theta_eccentric)
 time_total = time_orbit(semi_major_axis, mu_earth)
-
 delta_t = (time_total / (2 * np.pi)) * theta_mean / days_convert
 
 
@@ -619,6 +611,7 @@ plt.title("Transfer time as a function of apogee distance")
 plt.xlabel("Normalized apogee")
 plt.ylabel("Transfer time (days)")
 plt.show()  
+
     
 #2.2.3 ----------------------------------------------------------------------
  
