@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.31)  26 APR 2025 19:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.31)  28 APR 2025 21:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -308,7 +308,8 @@ Package translations Info: No language package found. I am going to use `english
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 56.
  (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) (Themission.aux)
+)
+No file Themission.aux.
 \openout1 = `Themission.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
@@ -325,7 +326,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -431,40 +431,40 @@ LaTeX Font Info:    External font `lmex10' loaded for size
  [1
 
 {C:/Users/alexa/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<114-pos.png, id=15, 392.46625pt x 293.095pt>
-File: 114-pos.png Graphic file (type png)
-<use 114-pos.png>
-Package pdftex.def Info: 114-pos.png  used on input line 170.
+<Images/114-pos.png, id=15, 392.46625pt x 293.095pt>
+File: Images/114-pos.png Graphic file (type png)
+<use Images/114-pos.png>
+Package pdftex.def Info: Images/114-pos.png  used on input line 170.
 (pdftex.def)             Requested size: 217.42265pt x 162.37447pt.
-<114-vel.png, id=17, 389.455pt x 282.55562pt>
-File: 114-vel.png Graphic file (type png)
-<use 114-vel.png>
-Package pdftex.def Info: 114-vel.png  used on input line 177.
+<Images/114-vel.png, id=17, 389.455pt x 282.55562pt>
+File: Images/114-vel.png Graphic file (type png)
+<use Images/114-vel.png>
+Package pdftex.def Info: Images/114-vel.png  used on input line 177.
 (pdftex.def)             Requested size: 217.42265pt x 157.74286pt.
  [2]
-<115-dis.png, id=23, 385.44pt x 293.095pt>
-File: 115-dis.png Graphic file (type png)
-<use 115-dis.png>
-Package pdftex.def Info: 115-dis.png  used on input line 187.
+<Images/115-dis.png, id=23, 385.44pt x 293.095pt>
+File: Images/115-dis.png Graphic file (type png)
+<use Images/115-dis.png>
+Package pdftex.def Info: Images/115-dis.png  used on input line 187.
 (pdftex.def)             Requested size: 271.7835pt x 206.66777pt.
- [3 <./114-pos.png> <./114-vel.png> <./115-dis.png>] [4]
-<123-3d.png, id=35, 463.7325pt x 466.74374pt>
-File: 123-3d.png Graphic file (type png)
-<use 123-3d.png>
-Package pdftex.def Info: 123-3d.png  used on input line 286.
+ [3 <./Images/114-pos.png> <./Images/114-vel.png> <./Images/115-dis.png>] [4]
+<Images/123-3d.png, id=35, 463.7325pt x 466.74374pt>
+File: Images/123-3d.png Graphic file (type png)
+<use Images/123-3d.png>
+Package pdftex.def Info: Images/123-3d.png  used on input line 286.
 (pdftex.def)             Requested size: 271.7835pt x 273.5532pt.
-<124-energies.png, id=36, 316.18124pt x 334.24875pt>
-File: 124-energies.png Graphic file (type png)
-<use 124-energies.png>
-Package pdftex.def Info: 124-energies.png  used on input line 293.
+<Images/124-energies.png, id=36, 316.18124pt x 334.24875pt>
+File: Images/124-energies.png Graphic file (type png)
+<use Images/124-energies.png>
+Package pdftex.def Info: Images/124-energies.png  used on input line 293.
 (pdftex.def)             Requested size: 271.7835pt x 287.33101pt.
- [5 <./123-3d.png>]
-<124-L.png, id=41, 407.5225pt x 279.0425pt>
-File: 124-L.png Graphic file (type png)
-<use 124-L.png>
-Package pdftex.def Info: 124-L.png  used on input line 304.
+ [5 <./Images/123-3d.png>]
+<Images/124-L.png, id=41, 407.5225pt x 279.0425pt>
+File: Images/124-L.png Graphic file (type png)
+<use Images/124-L.png>
+Package pdftex.def Info: Images/124-L.png  used on input line 304.
 (pdftex.def)             Requested size: 271.7835pt x 186.10593pt.
- [6 <./124-energies.png> <./124-L.png>] [7]
+ [6 <./Images/124-energies.png> <./Images/124-L.png>] [7]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 420.
 
@@ -475,48 +475,67 @@ Overfull \hbox (1.55019pt too wide) in paragraph at lines 420--429
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<del_a.png, id=51, 715.17188pt x 281.55188pt>
-File: del_a.png Graphic file (type png)
-<use del_a.png>
-Package pdftex.def Info: del_a.png  used on input line 440.
+<Images/del_a.png, id=51, 715.17188pt x 281.55188pt>
+File: Images/del_a.png Graphic file (type png)
+<use Images/del_a.png>
+Package pdftex.def Info: Images/del_a.png  used on input line 440.
 (pdftex.def)             Requested size: 203.83417pt x 80.2474pt.
-<del_e.png, id=52, 715.17188pt x 281.55188pt>
-File: del_e.png Graphic file (type png)
-<use del_e.png>
-Package pdftex.def Info: del_e.png  used on input line 447.
+<Images/del_e.png, id=52, 715.17188pt x 281.55188pt>
+File: Images/del_e.png Graphic file (type png)
+<use Images/del_e.png>
+Package pdftex.def Info: Images/del_e.png  used on input line 447.
 (pdftex.def)             Requested size: 203.83417pt x 80.2474pt.
-<del_i.png, id=53, 715.17188pt x 281.55188pt>
-File: del_i.png Graphic file (type png)
-<use del_i.png>
-Package pdftex.def Info: del_i.png  used on input line 457.
+<Images/del_i.png, id=53, 715.17188pt x 281.55188pt>
+File: Images/del_i.png Graphic file (type png)
+<use Images/del_i.png>
+Package pdftex.def Info: Images/del_i.png  used on input line 457.
 (pdftex.def)             Requested size: 203.83417pt x 80.2474pt.
-<del_Omega.png, id=54, 715.17188pt x 281.55188pt>
-File: del_Omega.png Graphic file (type png)
-<use del_Omega.png>
-Package pdftex.def Info: del_Omega.png  used on input line 464.
+<Images/del_Omega.png, id=54, 715.17188pt x 281.55188pt>
+File: Images/del_Omega.png Graphic file (type png)
+<use Images/del_Omega.png>
+Package pdftex.def Info: Images/del_Omega.png  used on input line 464.
 (pdftex.def)             Requested size: 203.83417pt x 80.2474pt.
-<del_lomega.png, id=55, 715.17188pt x 281.55188pt>
-File: del_lomega.png Graphic file (type png)
-<use del_lomega.png>
-Package pdftex.def Info: del_lomega.png  used on input line 474.
+<Images/del_lomega.png, id=55, 715.17188pt x 281.55188pt>
+File: Images/del_lomega.png Graphic file (type png)
+<use Images/del_lomega.png>
+Package pdftex.def Info: Images/del_lomega.png  used on input line 474.
 (pdftex.def)             Requested size: 203.83417pt x 80.2474pt.
-<del_theta.png, id=56, 715.17188pt x 281.55188pt>
-File: del_theta.png Graphic file (type png)
-<use del_theta.png>
-Package pdftex.def Info: del_theta.png  used on input line 481.
+<Images/del_theta.png, id=56, 715.17188pt x 281.55188pt>
+File: Images/del_theta.png Graphic file (type png)
+<use Images/del_theta.png>
+Package pdftex.def Info: Images/del_theta.png  used on input line 481.
 (pdftex.def)             Requested size: 203.83417pt x 80.2474pt.
+[8]
+<Images/221-rad.png, id=60, 399.4925pt x 282.55562pt>
+File: Images/221-rad.png Graphic file (type png)
+<use Images/221-rad.png>
+Package pdftex.def Info: Images/221-rad.png  used on input line 501.
+(pdftex.def)             Requested size: 217.42265pt x 153.78064pt.
+<Images/221-trans.png, id=61, 419.06563pt x 282.55562pt>
+File: Images/221-trans.png Graphic file (type png)
+<use Images/221-trans.png>
+Package pdftex.def Info: Images/221-trans.png  used on input line 508.
+(pdftex.def)             Requested size: 217.42265pt x 146.59778pt.
+ [9 <./Images/del_a.png> <./Images/del_e.png> <./Images/del_i.png> <./Images/del_Omega.png> <./Images/del_lomega.png> <./Images/del_theta.png>]
+<Images/222-time.png, id=74, 393.47pt x 282.55562pt>
+File: Images/222-time.png Graphic file (type png)
+<use Images/222-time.png>
+Package pdftex.def Info: Images/222-time.png  used on input line 516.
+(pdftex.def)             Requested size: 271.7835pt x 195.17052pt.
+<Images/223-altitude.png, id=75, 398.48875pt x 282.55562pt>
+File: Images/223-altitude.png Graphic file (type png)
+<use Images/223-altitude.png>
+Package pdftex.def Info: Images/223-altitude.png  used on input line 523.
+(pdftex.def)             Requested size: 271.7835pt x 192.72162pt.
+ [10 <./Images/221-rad.png> <./Images/221-trans.png> <./Images/222-time.png> <./Images/223-altitude.png>] [11]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[8] [9 <./del_a.png> <./del_e.png> <./del_i.png> <./del_Omega.png> <./del_lomega.png> <./del_theta.png>]
-
-c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:558: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¼).
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:580: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¼).
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.558 def time_orbit(a, Î¼)
+l.580 def time_orbit(a, Î¼)
                            :
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -525,13 +544,13 @@ in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
 
-c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:559: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¼).
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:581: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¼).
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.559     T = 2 * np.pi * np.sqrt(a**3 / Î¼)
+l.581     T = 2 * np.pi * np.sqrt(a**3 / Î¼)
                                             
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -539,15 +558,15 @@ or specify an encoding such as \usepackage [latin1]{inputenc}
 in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
-[10] [11] [12] [13] [14] [15]
+[12] [13] [14] [15] [16]
 
-c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:847: LaTeX Error: Invalid UTF-8 byte sequence (Â\lst@EC²).
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:869: LaTeX Error: Invalid UTF-8 byte sequence (Â\lst@EC²).
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.847 # Compute Specific Angular Momentum (kmÂ²/
+l.869 # Compute Specific Angular Momentum (kmÂ²/
                                                 s)
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -555,15 +574,15 @@ or specify an encoding such as \usepackage [latin1]{inputenc}
 in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
-[16]
+[17]
 
-c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:861: LaTeX Error: Invalid UTF-8 byte sequence (Â\lst@EC²).
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:883: LaTeX Error: Invalid UTF-8 byte sequence (Â\lst@EC²).
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.861 plt.ylabel("Specific Energy (kmÂ²/
+l.883 plt.ylabel("Specific Energy (kmÂ²/
                                         sÂ²)")
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -572,13 +591,13 @@ in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
 
-c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:861: LaTeX Error: Invalid UTF-8 byte sequence (Â\lst@EC²).
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:883: LaTeX Error: Invalid UTF-8 byte sequence (Â\lst@EC²).
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.861 plt.ylabel("Specific Energy (kmÂ²/sÂ²)
+l.883 plt.ylabel("Specific Energy (kmÂ²/sÂ²)
                                             ")
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -587,13 +606,13 @@ in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
 
-c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:875: LaTeX Error: Invalid UTF-8 byte sequence (Â\lst@EC²).
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:897: LaTeX Error: Invalid UTF-8 byte sequence (Â\lst@EC²).
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.875 plt.ylabel("Angular Momentum (kmÂ²/
+l.897 plt.ylabel("Angular Momentum (kmÂ²/
                                          s)")
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -601,15 +620,15 @@ or specify an encoding such as \usepackage [latin1]{inputenc}
 in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
-[17] [18] [19]
+[18] [19] [20]
 
-c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1033: LaTeX Error: Invalid UTF-8 byte sequence (â\lst@ECˆ\lst@EC†).
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1055: LaTeX Error: Invalid UTF-8 byte sequence (â\lst@ECˆ\lst@EC†).
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1033 # print(f"Maximum âˆ†i:
+l.1055 # print(f"Maximum âˆ†i:
                                {max_delta_i[0]:.4f} and {max_delta_i[1]:.4f}...
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -618,13 +637,13 @@ in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
 
-c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1034: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¸).
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1056: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¸).
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1034 # print(f"Occurs at true anomaly Î¸ 
+l.1056 # print(f"Occurs at true anomaly Î¸ 
                                            = {theta_imax[0]:.2f} and {theta_...
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -633,13 +652,13 @@ in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
 
-c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1035: LaTeX Error: Invalid UTF-8 byte sequence (Ï\lst@EC‰).
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1057: LaTeX Error: Invalid UTF-8 byte sequence (Ï\lst@EC‰).
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1035 # print(f"Here, Ï‰ 
+l.1057 # print(f"Here, Ï‰ 
                           = {w_imax[0]:.2f} and {w_imax[0]:.2f} radians")
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -648,13 +667,13 @@ in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
 
-c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1038: LaTeX Error: Invalid UTF-8 byte sequence (Ï\lst@EC‰).
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1060: LaTeX Error: Invalid UTF-8 byte sequence (Ï\lst@EC‰).
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1038 ...km)', 'e', 'i (rad)', 'RAAN (rad)', 'Ï‰ 
+l.1060 ...km)', 'e', 'i (rad)', 'RAAN (rad)', 'Ï‰ 
                                                   (rad)', 'Î¸ (rad)']
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -663,13 +682,13 @@ in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
 
-c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1038: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¸).
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1060: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¸).
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1038 ...i (rad)', 'RAAN (rad)', 'Ï‰ (rad)', 'Î¸ 
+l.1060 ...i (rad)', 'RAAN (rad)', 'Ï‰ (rad)', 'Î¸ 
                                                   (rad)']
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -678,13 +697,13 @@ in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
 
-c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1047: LaTeX Error: Invalid UTF-8 byte sequence (â\lst@ECˆ\lst@EC†).
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1069: LaTeX Error: Invalid UTF-8 byte sequence (â\lst@ECˆ\lst@EC†).
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1047 ...le(f'Change in {labels[i]} due to âˆ†V')
+l.1069 ...le(f'Change in {labels[i]} due to âˆ†V')
                                                   
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -693,13 +712,13 @@ in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
 
-c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1048: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¸).
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1070: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¸).
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1048         plt.xlabel('True Anomaly Î¸ 
+l.1070         plt.xlabel('True Anomaly Î¸ 
                                            (deg)')
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -708,13 +727,13 @@ in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
 
-c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1049: LaTeX Error: Invalid UTF-8 byte sequence (â\lst@ECˆ\lst@EC†).
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1071: LaTeX Error: Invalid UTF-8 byte sequence (â\lst@ECˆ\lst@EC†).
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1049         plt.ylabel(f'âˆ†{
+l.1071         plt.ylabel(f'âˆ†{
                                 labels[i]}')
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -722,23 +741,23 @@ or specify an encoding such as \usepackage [latin1]{inputenc}
 in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
-[20] [21] [22] (Themission.aux)
+[21] [22] [23] (Themission.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 11942 strings out of 478582
- 235112 string characters out of 2844344
- 784836 words of memory out of 3000000
- 29980 multiletter control sequences out of 15000+600000
+ 11967 strings out of 478582
+ 236154 string characters out of 2844344
+ 789836 words of memory out of 3000000
+ 30002 multiletter control sequences out of 15000+600000
  534748 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,14n,77p,443b,1708s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 71i,14n,77p,443b,1673s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on Themission.pdf (22 pages, 763267 bytes).
+Output written on Themission.pdf (23 pages, 896851 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
+ 193 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

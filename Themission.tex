@@ -167,14 +167,14 @@ def Ephemeris(t, OBJdata, mu):
     \centering
     \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{114-pos.png}
+        \includegraphics[width=\textwidth]{Images/114-pos.png}
         \caption{Position vectors of Earth and the Asteroid's for a full Earth orbital period}
         \label{fig:pos}
     \end{minipage}
     \hfill
     \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{114-vel.png}
+        \includegraphics[width=\textwidth]{Images/114-vel.png}
         \caption{Velocity vectors of Earth and the Asteroid's for a full Earth orbital period}
         \label{fig:vel}
     \end{minipage}
@@ -184,7 +184,7 @@ def Ephemeris(t, OBJdata, mu):
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{115-dis.png}
+    \includegraphics[width=0.6\textwidth]{Images/115-dis.png}
     \caption{Distance between Earth and 2024 YR4 asteroid in kilometers}
     \label{fig:example}
 \end{figure}
@@ -283,14 +283,14 @@ vx, vy, vz = solution.y[3], solution.y[4], solution.y[5]
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{123-3d.png}
+    \includegraphics[width=0.6\textwidth]{Images/123-3d.png}
     \caption{Orbital trajectory in ECI frame with initial conditions given from $X_0$}
     \label{fig:example}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{124-energies.png}
+    \includegraphics[width=0.6\textwidth]{Images/124-energies.png}
     \caption{How Kinetic, Potential, and Total energies change throughout the orbit }
     \label{fig:example}
 \end{figure}
@@ -301,7 +301,7 @@ as this is a closed system with no external forces.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{124-L.png}
+    \includegraphics[width=0.6\textwidth]{Images/124-L.png}
     \caption{Graph shows the change in the angular momentum over the orbit is zero}
     \label{fig:example}
 \end{figure}
@@ -431,20 +431,20 @@ Using these combinations of functions we can apply an impulse in the three diffe
     \end{table}
     
 
-    \begin{figure}[h]
+    \begin{figure}[H]
         \centering
     
         % First row
         \begin{subfigure}[t]{0.45\textwidth}
             \centering
-            \includegraphics[width=\linewidth]{del_a.png}
+            \includegraphics[width=\linewidth]{Images/del_a.png}
             \caption{Graph 1}
             \label{fig:graph1}
         \end{subfigure}
         \hspace{0.05\textwidth}
         \begin{subfigure}[t]{0.45\textwidth}
             \centering
-            \includegraphics[width=\linewidth]{del_e.png}
+            \includegraphics[width=\linewidth]{Images/del_e.png}
             \caption{Graph 2}
             \label{fig:graph2}
         \end{subfigure}
@@ -454,14 +454,14 @@ Using these combinations of functions we can apply an impulse in the three diffe
         % Second row
         \begin{subfigure}[t]{0.45\textwidth}
             \centering
-            \includegraphics[width=\linewidth]{del_i.png}
+            \includegraphics[width=\linewidth]{Images/del_i.png}
             \caption{Graph 3}
             \label{fig:graph3}
         \end{subfigure}
         \hspace{0.05\textwidth}
         \begin{subfigure}[t]{0.45\textwidth}
             \centering
-            \includegraphics[width=\linewidth]{del_Omega.png}
+            \includegraphics[width=\linewidth]{Images/del_Omega.png}
             \caption{Graph 4}
             \label{fig:graph4}
         \end{subfigure}
@@ -471,14 +471,14 @@ Using these combinations of functions we can apply an impulse in the three diffe
         % Third row
         \begin{subfigure}[t]{0.45\textwidth}
             \centering
-            \includegraphics[width=\linewidth]{del_lomega.png}
+            \includegraphics[width=\linewidth]{Images/del_lomega.png}
             \caption{Graph 5}
             \label{fig:graph5}
         \end{subfigure}
         \hspace{0.05\textwidth}
         \begin{subfigure}[t]{0.45\textwidth}
             \centering
-            \includegraphics[width=\linewidth]{del_theta.png}
+            \includegraphics[width=\linewidth]{Images/del_theta.png}
             \caption{Graph 6}
             \label{fig:graph6}
         \end{subfigure}
@@ -486,22 +486,44 @@ Using these combinations of functions we can apply an impulse in the three diffe
         \caption{Six graphs arranged in three rows, two per row.}
         \label{fig:six_graphs}
     \end{figure}
+Using these graphs we can examine which $\theta$ values maximise $\Delta i$. Using the Signal library apart of Python
+and its corrosponding find\_peaks\_cwt function, the peaks of $\Delta i$ are  $-0.0014$ and $0.0013$ radians.
+These corrosponding $\theta$ values are $2.36$ and $5.46$ radians. Understanding that the argument of latitude, $u$,
+is defined as $\theta + \omega$, and observing that at these theta values, $\omega = 0.79$ and $0.79$ radians.
+Hence, $u = 3.145$ and $6.245$ radians. These numbers represent the apogee and perigee respectively (which make sense because the perigee and apogee 
+occur at $\pi$ and $2\pi$). Therefore, for maximum change to the inclination, one should provide a normal impulse at the perigee and apogee.
 
 
-\section{Tables}
-\begin{table}[H]
+\begin{figure}[H]
     \centering
-    \begin{tabular}{l c r}
-        \toprule
-        Left & Center & Right \\
-        \midrule
-        A & B & C \\
-        1 & 2 & 3 \\
-        \bottomrule
-    \end{tabular}
-    \caption{Example table.}
-    \label{tab:example}
-\end{table}
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/221-rad.png}
+        \caption{Graph depicting how the radial velocity increases as the apogee distance increases}
+        \label{fig:pos}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/221-trans.png}
+        \caption{Graph depicting how the transverse velocity increases as the apogee distance increases}
+        \label{fig:vel}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Images/222-time.png}
+    \caption{Distance between Earth and 2024 YR4 asteroid in kilometers}
+    \label{fig:example}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Images/223-altitude.png}
+    \caption{Distance between Earth and 2024 YR4 asteroid in kilometers}
+    \label{fig:example}
+\end{figure}
 
 \section{Appendix}
 \begin{lstlisting}

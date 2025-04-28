@@ -532,14 +532,14 @@ w_imax = [all_elements_N[4,peak_indices[0]], all_elements_N[4,peak_indices[1]]]
 
 u_val = np.array(theta_imax) + np.array(w_imax)
 
-print(f"Maximum ∆i: {max_delta_i[0]:.4f} and {max_delta_i[1]:.4f} radians")
-print(f"Occurs at true anomaly θ = {theta_imax[0]:.2f} and {theta_imax[1]:.2f} radians")
-print(f"Here, ω = {w_imax[0]:.2f} and {w_imax[0]:.2f} radians")
-print(f"These represent a u value of {u_val[0]:.3f} and {u_val[1]:.3f}")
-print("Hence, maximum impact from impulse occurs at the preigee and apogee in the normal direction")
+# print(f"Maximum ∆i: {max_delta_i[0]:.4f} and {max_delta_i[1]:.4f} radians")
+# print(f"Occurs at true anomaly θ = {theta_imax[0]:.2f} and {theta_imax[1]:.2f} radians")
+# print(f"Here, ω = {w_imax[0]:.2f} and {w_imax[0]:.2f} radians")
+# print(f"These represent a u value of {u_val[0]:.3f} and {u_val[1]:.3f}")
+# print("Hence, maximum impact from impulse occurs at the preigee and apogee in the normal direction")
 labels = ['a (km)', 'e', 'i (rad)', 'RAAN (rad)', 'ω (rad)', 'θ (rad)']
 
-
+show_plots = False
 if show_plots:
     for i in range(6):
         plt.figure(figsize=(10, 4))
@@ -585,14 +585,21 @@ v_transverse = np.sqrt(mu_earth / semi_latus_rectum) * (1 + transfer_e * np.cos(
 
 normed_apogee = radius_apogee/r_mean
 
-if show_plots:
-    plt.plot(normed_apogee, v_radial, label="radial")
-    plt.legend()
-    plt.show()
-    plt.figure()
-    plt.plot(normed_apogee, v_transverse, label="transverse")
-    plt.legend()
-    plt.show()
+
+plt.plot(normed_apogee, v_radial, label="radial")
+plt.grid(True)
+plt.xlabel("Normalized apogee")
+plt.ylabel("Speed (km/s)")
+plt.title("Radial Velocity as a function of apogee distance")
+plt.show()
+
+plt.figure()
+plt.plot(normed_apogee, v_transverse, label="transverse")
+plt.grid(True)
+plt.xlabel("Normalized apogee")
+plt.ylabel("Speed (km/s)")
+plt.title("Transverse Velocity as a function of apogee distance")
+plt.show()
 
 #2.2.2 ----------------------------------------------------------------------
  
@@ -603,8 +610,14 @@ time_total = time_orbit(semi_major_axis, mu_earth)
 
 delta_t = (time_total / (2 * np.pi)) * theta_mean / days_convert
 
+
+plt.figure()
 plt.plot(normed_apogee, delta_t)
+plt.grid()
 plt.axhline(3)
+plt.title("Transfer time as a function of apogee distance")
+plt.xlabel("Normalized apogee")
+plt.ylabel("Transfer time (days)")
 plt.show()  
     
 #2.2.3 ----------------------------------------------------------------------
@@ -620,17 +633,17 @@ v_infminus = np.sqrt(v_radial**2 + v_it**2)
 
 quotient = v_ir / -v_it
 delta_angle = np.arctan(quotient)
-#print(delta_angle)
-
 hyperbolic_e = (np.sin(delta_angle))**-1
-#print(hyperbolic_e)
-
 r_perilune = (hyperbolic_e - 1)*mu_moon/(v_infminus**2)
-
-#print(r_perilune)
 altitude_perilune = r_perilune - radius_moon
 
 plt.plot(delta_t, altitude_perilune)
+plt.axvline(3)
+plt.grid(True)
+
+plt.xlabel("Transfer time (days)")
+plt.ylabel("Required Altitude (km)")
+plt.title("Required Perilune Altitude Against Transfer Time")
 plt.show()
 
 
