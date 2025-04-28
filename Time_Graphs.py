@@ -147,17 +147,17 @@ def COE2RV(arr, mu):
 
 
 state_vector_0 = np.array(COE2RV(Obj2_t0, mu_sun))
-print(state_vector_0) # t = t0
+#print(state_vector_0) # t = t0
 
 
 
 state_vector_100 = np.array(COE2RV(Obj2_t100, mu_sun))
-print(state_vector_100) # t = t0 + 100
+#print(state_vector_100) # t = t0 + 100
 
 # print('\n')
 # print(state_vector_0 - state_vector_100)
 
-
+t_0_days = 2460705.5
 days_convert = 3600*24
 #1.1.4 ----------------------------------------------------------------------
 
@@ -165,6 +165,8 @@ def Ephemeris(t, OBJdata, mu):
 
     time, a, e, i, Omega, omega, mean_anamoly = OBJdata[0:7]
     nu_t = (mu / (a**3))**0.5
+    
+    t = t - t_0_days*days_convert
     mean_anamoly_t = mean_anamoly + nu_t * (t)
 
     h = np.sqrt(mu * a * (1 - e**2))
@@ -178,35 +180,46 @@ def Ephemeris(t, OBJdata, mu):
     R_matrix = rotation_matrix(i, Omega, omega)
     r_ijk = R_matrix @ arr_r
     v_ijk = R_matrix @ arr_v
+    
     return r_ijk, v_ijk
 
 
+
+
 years_shown_i = 1
-
-t_0_days = 2460705
-
-t_array = days_convert*np.arange(0,years_shown_i*365, 1)
-
+t_array = days_convert*np.arange(t_0_days,t_0_days+years_shown_i*365, 1) 
 
 x_earth = np.zeros((6,len(t_array)))
 x_asteroid = np.zeros((6,len(t_array)))
 
-
-    
+ 
 for r in range(len(t_array)):
     x_earth[0:6, r] = np.hstack(Ephemeris(t_array[r], E_ae0, mu_sun))
     x_asteroid[0:6, r] = np.hstack(Ephemeris(t_array[r], A_ae0, mu_sun))
     
 
+t_day_array = np.arange(0, years_shown_i*365, 1)
+time_Earth = time_orbit(E_ae0[1], mu_sun)/days_convert # Convert from seconds to days
+orbital_percent_E = (t_day_array / time_Earth) 
 
-time_Earth = time_orbit(E_ae0[1], mu_sun)
-orbital_percent_E = (t_array / time_Earth) 
 
+plt.plot(orbital_percent_E,[norm(x_earth[0:3, t]) for t in range(len(t_array))], label="Earth position", color='b')
+plt.plot(orbital_percent_E, [norm(x_asteroid[0:3, t]) for t in range(len(t_array))], label="Asteroid position", color='r')
+plt.title("Magnitude of the Position of Earth and 2024 YR4 Asteroid")
+plt.xlabel("Percent of Earth's Orbit (%)")
+plt.ylabel("Position Vector (km)")
+if show_plots:
+    plt.show()
+else:
+    plt.close()
 
-plt.plot(orbital_percent_E,[norm(x_earth[0:3, t]) for t in range(len(t_array))], label="|r| - Earth", color='b')
-plt.plot(orbital_percent_E, [norm(x_asteroid[0:3, t]) for t in range(len(t_array))], label="|r| - Asteroid ", color='r')
+plt.figure()
+plt.plot(orbital_percent_E,[norm(x_earth[3:, t]) for t in range(len(t_array))], label="Earth velocity", color='b')
+plt.plot(orbital_percent_E, [norm(x_asteroid[3:, t]) for t in range(len(t_array))], label="Asteroid velocity", color='r')
 plt.legend()
-
+plt.xlabel("Percent of Earth's Orbit (%)")
+plt.ylabel("Velocity Vector (km/s)")
+plt.title("Magnitude of the Position of Earth and 2024 YR4 Asteroid")
 
 if show_plots:
     plt.show()
@@ -214,7 +227,7 @@ else:
     plt.close()
     
 years_shown = 10
-t_total = days_convert*np.arange(0,years_shown*365, 1)
+t_total = days_convert*np.arange(t_0_days, t_0_days + years_shown*365, 1)
 
 
 
@@ -225,11 +238,17 @@ for t in t_total:
     
     
 plt.figure()
-plt.plot(t_total*(10/t_total[-1]), normed_diff)
+#plt.plot(t_total*(10/t_total[-1]), normed_diff)
+plt.plot(t_total/(days_convert*365), normed_diff)
 plt.title("Absolute distance seperation of Earth and 2024 YR4")
-plt.xlabel("Time (years)")
+plt.xlabel("Time in J2000 (years)")
 plt.ylabel("Distance Seperation (km)")
 if show_plots:
     plt.show()
 else:
     plt.close()
+    
+    
+
+
+
