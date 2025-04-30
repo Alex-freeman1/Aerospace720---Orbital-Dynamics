@@ -257,7 +257,7 @@ x0, y0, z0 = 4604.49276873138, 1150.81472538679, 4694.55079634563   # km
 vx0, vy0, vz0 = -5.10903235110107 , -2.48824074138143 ,5.62098648967432   # km/s
 
 # Pack initial state vector
-X0 = [x0, y0, z0, vx0, vy0, vz0]
+X0 = [x0, y0, z0, vx0, vy0, vz0]    
 
 #1.2.2 ----------------------------------------------------------------------
 
@@ -295,15 +295,12 @@ vx, vy, vz = solution.y[3], solution.y[4], solution.y[5]
 r = np.sqrt(x**2 + y**2 + z**2)
 
 # Compute speed
-
-
 v_lin = np.sqrt(vx**2 + vy**2 + vz**2)
-
-
 
 # 3D Trajectory Plot
 fig = plt.figure(figsize=(8, 8))
 ax = fig.add_subplot(111, projection='3d')
+
 
 #Plot Earth as a sphere
 earth_radius = 6378  # km (mean Earth radius)
@@ -313,8 +310,16 @@ Y_earth = earth_radius * np.sin(u) * np.sin(v)
 Z_earth = earth_radius * np.cos(v)
 ax.plot_surface(X_earth, Y_earth, Z_earth, color='b', alpha=0.3)
 
+
 # Plot the orbit
-ax.plot(x, y, z, label="Orbit Path", color='r')
+# Dashed section 
+ax.plot(x[:460], y[:460], z[:460], color='r', label='Behind Earth',linestyle='dashed')
+
+# Dashed segment (between 460 and 890)
+ax.plot(x[460:891], y[460:891], z[460:891], color='r', linewidth=1.5, label='Visible Orbit')
+
+ax.plot(x[891:], y[891:], z[891:], color='r',linestyle='dashed')
+
 
 # Labels and title
 ax.set_xlabel("X (km)")
@@ -322,12 +327,6 @@ ax.set_ylabel("Y (km)")
 ax.set_zlabel("Z (km)")
 ax.set_title("Orbital Trajectory in ECI Frame")
 ax.legend()
-
-# Set limits to give a clear view
-ax.set_xlim([-2*r0, 2*r0])
-ax.set_ylim([-2*r0, 2*r0])
-ax.set_zlim([-2*r0, 2*r0])
-
 if show_plots:
     plt.show()
 else:
@@ -348,7 +347,6 @@ x, y, z = solution.y[0], solution.y[1], solution.y[2]
 vx, vy, vz = solution.y[3], solution.y[4], solution.y[5]
 # Compute Specific Angular Momentum (km²/s)
 h_array = np.sqrt(((y * vz) - (z * vy))**2 + ((z * vx) - (x * vz))**2 + ((x * vy) - (y * vx))**2)
-
 # Convert time to hours for better readability
 time_hours = solution.t / 3600
 
@@ -555,20 +553,20 @@ if show_plots:
         plt.show()
             
  #2.2.1 ----------------------------------------------------------------------
-       
 parking_altitude = 220
-parking_radius = parking_altitude + radius_earth
+r_p = parking_altitude + radius_earth
 
-radius_apogee = r_mean*np.arange(1.1, 1.4, 0.01)
-semi_major_axis = 0.5*(parking_radius + radius_apogee)
-transfer_e = (radius_apogee-parking_radius)/(radius_apogee+parking_radius)
-cos_theta_A = (semi_major_axis * (1 - transfer_e**2) / r_mean - 1) / transfer_e
+r_a = r_mean*np.arange(1.1, 1.4, 0.01)
+a = 0.5*(r_p + r_a)
+ecc = (r_a-r_p)/(r_a+r_p)
+cos_theta_A = (a * (1 - ecc**2) / r_mean - 1) / ecc
 theta_2 = np.arccos(cos_theta_A)
-semi_latus_rectum =  semi_major_axis * (1 - transfer_e**2)
+p =  a * (1 - ecc**2)
 
-v_radial = np.sqrt(mu_earth / semi_latus_rectum) * transfer_e * np.sin(theta_2)
-v_transverse = np.sqrt(mu_earth / semi_latus_rectum) * (1 + transfer_e * np.cos(theta_2))
-normed_apogee = radius_apogee/r_mean
+v_radial = np.sqrt(mu_earth / p) * ecc * np.sin(theta_2)
+v_transverse = np.sqrt(mu_earth / p) * (1 + ecc * np.cos(theta_2))
+normed_apogee = r_a/r_mean    
+
 
 plt.figure()
 plt.plot(normed_apogee, theta_2, label="true anamoly")
@@ -576,7 +574,7 @@ plt.grid(True)
 plt.xlabel("Normalized apogee")
 plt.ylabel("Angle (radians)")
 plt.title("True anamoly as a function of apogee distance")
-plt.show
+plt.close()
 
 plt.figure()
 plt.plot(normed_apogee, v_radial, label="radial")
@@ -597,11 +595,11 @@ plt.close()
 #2.2.2 ----------------------------------------------------------------------
  
 
-theta_eccentric = 2*np.arctan(np.tan(theta_2/2) * ((1-transfer_e)/(1+transfer_e))**(0.5))
-theta_mean = theta_eccentric - transfer_e*np.sin(theta_eccentric)
-time_total = time_orbit(semi_major_axis, mu_earth)
+theta_eccentric = 2*np.arctan(np.tan(theta_2/2) * ((1-ecc)/(1+ecc))**(0.5))
+theta_mean = theta_eccentric - ecc*np.sin(theta_eccentric)
+time_total = time_orbit(a, mu_earth)
 delta_t = (time_total / (2 * np.pi)) * theta_mean / days_convert
-
+print(delta_t[24])
 
 plt.figure()
 plt.plot(normed_apogee, delta_t)
@@ -623,8 +621,7 @@ v_ir = v_radial
 v_it = v_transverse-v_moon
 v_infminus = np.sqrt(v_radial**2 + v_it**2)
 
-
-quotient = v_ir / -v_it
+quotient = -v_ir / v_it
 delta_angle = np.arctan(quotient)
 hyperbolic_e = (np.sin(delta_angle))**-1
 r_perilune = (hyperbolic_e - 1)*mu_moon/(v_infminus**2)
@@ -640,6 +637,10 @@ plt.title("Required Perilune Altitude Against Transfer Time")
 plt.show()
 
 
+i = 24
+print(v_ir[24])
+print(v_transverse[24])
+print(np.degrees(2*delta_angle))
 # If the radial velocity is flipped while the transverse velocity remains unchanged
 # Then the total turning angle, delta, is twice the angle between v_inf and the moon
 # in the radial direction
