@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.31)  30 APR 2025 19:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.31)  2 MAY 2025 23:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -555,28 +555,809 @@ LaTeX Info: Redefining \\ on input line 3187.
 \FV@LineIndentBox=\box83
 \c@FV@BreakBufferDepth=\count345
 \FV@LineWidth=\dimen293
+) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/pgfopts\pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks42
+\pgfopts@list@add@b@toks=\toks43
+) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
+\c@minted@FancyVerbLineTemp=\count346
+\@float@every@listing=\toks44
+\c@listing=\count347
+) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryangles.code.tex
+File: tikzlibraryangles.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.markings.code.tex (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen294
+\pgfdecoratedremainingdistance=\dimen295
+\pgfdecoratedinputsegmentcompleteddistance=\dimen296
+\pgfdecoratedinputsegmentremainingdistance=\dimen297
+\pgf@decorate@distancetomove=\dimen298
+\pgf@decorate@repeatstate=\count348
+\pgfdecorationsegmentamplitude=\dimen299
+\pgfdecorationsegmentlength=\dimen300
+)
+\tikz@lib@dec@box=\box84
+) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.markings.code.tex)) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen301
+\lightrulewidth=\dimen302
+\cmidrulewidth=\dimen303
+\belowrulesep=\dimen304
+\belowbottomsep=\dimen305
+\aboverulesep=\dimen306
+\abovetopsep=\dimen307
+\cmidrulesep=\dimen308
+\cmidrulekern=\dimen309
+\defaultaddspace=\dimen310
+\@cmidla=\count349
+\@cmidlb=\count350
+\@aboverulesep=\dimen311
+\@belowrulesep=\dimen312
+\@thisruleclass=\count351
+\@lastruleclass=\count352
+\@thisrulewidth=\dimen313
+)
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 69.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 69.
+ (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) (Themission.aux)
+\openout1 = `Themission.aux'.
 
-! LaTeX Error: File `latex2pydata.sty' not found.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Enter file name: 
-C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/minted\minted.sty:33: Emergency stop.
-<read *> 
-         
-l.33 \RequirePackage{latex2pydata}[2024/10/16]
-                                              ^^M
-*** (cannot \read from terminal in nonstop modes)
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 69.
+ (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count353
+\scratchdimen=\dimen314
+\scratchbox=\box85
+\nofMPsegments=\count354
+\nofMParguments=\count355
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count356
+\MPscratchDim=\dimen315
+\MPnumerator=\count357
+\makeMPintoPDFobject=\count358
+\everyMPtoPDFconversion=\toks46
+) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen316
+\caption@adjustwidth@linewidth=\dimen317
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count359
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 71.
+ (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 71.
+ (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 71.
+ (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 71.
+ (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 71.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 71.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 71.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 71.
+ (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
+ (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 71.
+ (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 77--81
 
- 
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 81.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 81.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 81.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 109.
+
+Underfull \hbox (badness 1275) in paragraph at lines 128--131
+\T1/lmr/m/n/12 We need to solve Ke-pler's Equa-tion us-
+ []
+
+
+Underfull \vbox (badness 2726) has occurred while \output is active []
+
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 132.
+ (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [1{C:/Users/alexa/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
+[]\T1/lmr/m/n/12 Next, there is a func-tion called
+ []
+
+
+Underfull \hbox (badness 5490) in paragraph at lines 235--236
+\T1/lmr/m/n/12 "Ephemeris". It re-turns the po-si-tion
+ []
+
+<Images/114-pos.png, id=18, 392.46625pt x 293.095pt>
+File: Images/114-pos.png Graphic file (type png)
+<use Images/114-pos.png>
+Package pdftex.def Info: Images/114-pos.png  used on input line 270.
+(pdftex.def)             Requested size: 225.4804pt x 168.39413pt.
+<Images/114-vel.png, id=20, 389.455pt x 282.55562pt>
+File: Images/114-vel.png Graphic file (type png)
+<use Images/114-vel.png>
+Package pdftex.def Info: Images/114-vel.png  used on input line 276.
+(pdftex.def)             Requested size: 225.4804pt x 163.58919pt.
+[2]
+<Images/115-dis.png, id=28, 385.44pt x 293.095pt>
+File: Images/115-dis.png Graphic file (type png)
+<use Images/115-dis.png>
+Package pdftex.def Info: Images/115-dis.png  used on input line 285.
+(pdftex.def)             Requested size: 225.4804pt x 171.45764pt.
+ [3 <./Images/114-pos.png> <./Images/114-vel.png> <./Images/115-dis.png>]
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 365.
+ (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmtt.fd
+File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+<Images/123-3d.png, id=37, 470.25688pt x 474.77374pt>
+File: Images/123-3d.png Graphic file (type png)
+<use Images/123-3d.png>
+Package pdftex.def Info: Images/123-3d.png  used on input line 413.
+(pdftex.def)             Requested size: 225.4804pt x 227.64249pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 414.
+ [4 <./Images/123-3d.png>]
+<Images/124-energies.png, id=45, 316.18124pt x 334.24875pt>
+File: Images/124-energies.png Graphic file (type png)
+<use Images/124-energies.png>
+Package pdftex.def Info: Images/124-energies.png  used on input line 435.
+(pdftex.def)             Requested size: 187.89914pt x 198.6382pt.
+<Images/124-L.png, id=46, 407.5225pt x 279.0425pt>
+File: Images/124-L.png Graphic file (type png)
+<use Images/124-L.png>
+Package pdftex.def Info: Images/124-L.png  used on input line 445.
+(pdftex.def)             Requested size: 225.4804pt x 154.39354pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--474
+
+ []
+
+[5 <./Images/124-energies.png> <./Images/124-L.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+<Images/del_a.png, id=55, 715.17188pt x 281.55188pt>
+File: Images/del_a.png Graphic file (type png)
+<use Images/del_a.png>
+Package pdftex.def Info: Images/del_a.png  used on input line 611.
+(pdftex.def)             Requested size: 225.4804pt x 88.76663pt.
+<Images/del_e.png, id=56, 715.17188pt x 281.55188pt>
+File: Images/del_e.png Graphic file (type png)
+<use Images/del_e.png>
+Package pdftex.def Info: Images/del_e.png  used on input line 617.
+(pdftex.def)             Requested size: 225.4804pt x 88.76663pt.
+<Images/del_i.png, id=57, 715.17188pt x 281.55188pt>
+File: Images/del_i.png Graphic file (type png)
+<use Images/del_i.png>
+Package pdftex.def Info: Images/del_i.png  used on input line 623.
+(pdftex.def)             Requested size: 225.4804pt x 88.76663pt.
+<Images/del_Omega.png, id=58, 715.17188pt x 281.55188pt>
+File: Images/del_Omega.png Graphic file (type png)
+<use Images/del_Omega.png>
+Package pdftex.def Info: Images/del_Omega.png  used on input line 633.
+(pdftex.def)             Requested size: 225.4804pt x 88.76663pt.
+<Images/del_lomega.png, id=59, 715.17188pt x 281.55188pt>
+File: Images/del_lomega.png Graphic file (type png)
+<use Images/del_lomega.png>
+Package pdftex.def Info: Images/del_lomega.png  used on input line 641.
+(pdftex.def)             Requested size: 225.4804pt x 88.76663pt.
+<Images/del_theta.png, id=60, 715.17188pt x 281.55188pt>
+File: Images/del_theta.png Graphic file (type png)
+<use Images/del_theta.png>
+Package pdftex.def Info: Images/del_theta.png  used on input line 645.
+(pdftex.def)             Requested size: 225.4804pt x 88.76663pt.
+
+Underfull \vbox (badness 2005) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 666--683
+\T1/lmr/m/n/12 trans-fer time but will ar-rive with some
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 666--683
+
+ []
+
+
+Underfull \hbox (badness 1769) in paragraph at lines 666--683
+[]\T1/lmr/m/n/12 The fol-low-ing code uses the range of
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 666--683
+\T1/lmr/m/n/12 axis, ec-cen-tric-ity, the true anomaly, and
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./Images/del_a.png> <./Images/del_e.png> <./Images/del_i.png> <./Images/del_Omega.png> <./Images/del_lomega.png> <./Images/del_theta.png>]
+<Images/221-theta.png, id=74, 393.47pt x 282.55562pt>
+File: Images/221-theta.png Graphic file (type png)
+<use Images/221-theta.png>
+Package pdftex.def Info: Images/221-theta.png  used on input line 717.
+(pdftex.def)             Requested size: 225.4804pt x 161.91634pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<Images/221-rad.png, id=75, 399.4925pt x 282.55562pt>
+File: Images/221-rad.png Graphic file (type png)
+<use Images/221-rad.png>
+Package pdftex.def Info: Images/221-rad.png  used on input line 726.
+(pdftex.def)             Requested size: 225.4804pt x 159.48038pt.
+<Images/221-trans.png, id=76, 419.06563pt x 282.55562pt>
+File: Images/221-trans.png Graphic file (type png)
+<use Images/221-trans.png>
+Package pdftex.def Info: Images/221-trans.png  used on input line 734.
+(pdftex.def)             Requested size: 225.4804pt x 152.0302pt.
+ [8 <./Images/221-theta.png> <./Images/221-rad.png> <./Images/221-trans.png>]
+<Images/222-time.png, id=83, 393.47pt x 282.55562pt>
+File: Images/222-time.png Graphic file (type png)
+<use Images/222-time.png>
+Package pdftex.def Info: Images/222-time.png  used on input line 775.
+(pdftex.def)             Requested size: 225.4804pt x 161.91634pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./Images/222-time.png>]
+<Images/223-altitude.png, id=88, 398.48875pt x 282.55562pt>
+File: Images/223-altitude.png Graphic file (type png)
+<use Images/223-altitude.png>
+Package pdftex.def Info: Images/223-altitude.png  used on input line 813.
+(pdftex.def)             Requested size: 225.4804pt x 159.88133pt.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 861.
+ (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Overfull \hbox (6.636pt too wide) in paragraph at lines 864--865
+[][] 
+ []
+
+
+Underfull \hbox (badness 2680) in paragraph at lines 868--876
+\T1/lmr/m/n/12 sym-met-ric tra-jec-tory rep-re-sen-ta-tive of a
+ []
+
+
+Underfull \hbox (badness 1776) in paragraph at lines 868--876
+\T1/lmr/m/n/12 re-quired per-ilune al-ti-tude of 440.88 km.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 868--876
+
+ []
+
+
+Underfull \hbox (badness 3826) in paragraph at lines 868--876
+[]\T1/lmr/m/n/12 Finally, it can be ideal to vi-su-alise
+ []
+
+[10 <./Images/223-altitude.png>]
+<Images/bonus.png, id=97, 726.715pt x 715.17188pt>
+File: Images/bonus.png Graphic file (type png)
+<use Images/bonus.png>
+Package pdftex.def Info: Images/bonus.png  used on input line 965.
+(pdftex.def)             Requested size: 225.4804pt x 221.89742pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ (Themission.bbl) [11 <./Images/bonus.png>]
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1030: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¼).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1030     def time_orbit(a, Î¼)
+                                :
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1031: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¼).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1031         T = 2 * np.pi * np.sqrt(a**3 / Î¼)
+                                                 
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12
+
+]
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1104: LaTeX Error: Invalid UTF-8 byte sequence (â\lst@EC‚\lst@EC€).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1104     print(f"The true anomaly at t = tâ‚€ 
+                                                is \n{true_a_t_0:.6f} radians")
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1105: LaTeX Error: Invalid UTF-8 byte sequence (â\lst@EC‚\lst@EC€).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1105     print(f"The true anomaly at t = tâ‚€ 
+                                                + 100 is \n{true_a_t_100:.6f...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1387: LaTeX Error: Invalid UTF-8 byte sequence (Â\lst@EC²).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1387     plt.ylabel("Specific Energy (kmÂ²/
+                                             sÂ²)")
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1387: LaTeX Error: Invalid UTF-8 byte sequence (Â\lst@EC²).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1387     plt.ylabel("Specific Energy (kmÂ²/sÂ²)
+                                                 ")
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1400: LaTeX Error: Invalid UTF-8 byte sequence (Â\lst@EC²).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1400     plt.ylabel("Angular Momentum (kmÂ²/
+                                              s)")
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1460: LaTeX Error: Invalid UTF-8 byte sequence (Ï\lst@EC‰).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1460     # Labels for COEs: a, e, i, RAAN, Ï‰,
+                                                 Î¸
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1460: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¸).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1460 ...# Labels for COEs: a, e, i, RAAN, Ï‰, Î¸
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1461: LaTeX Error: Invalid UTF-8 byte sequence (Ï\lst@EC‰).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1461 ...km)', 'e', 'i (rad)', 'RAAN (rad)', 'Ï‰ 
+                                                  (rad)', 'Î¸ (rad)']
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1461: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¸).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1461 ...i (rad)', 'RAAN (rad)', 'Ï‰ (rad)', 'Î¸ 
+                                                  (rad)']
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1462: LaTeX Error: Invalid UTF-8 byte sequence (â\lst@EC‚\lst@EC€).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1462     print("The COE of Xâ‚€ 
+                                  are")
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1535: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC”).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1535     print("\nÎ”COE 
+                          due to unit impulses (in appropriate units):\n")
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1536: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC”).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1536 ...{:>12} {:>12}".format("Element", "Î”er",
+                                                   "Î”et", "Î”en"))
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1536: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC”).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1536 ...:>12}".format("Element", "Î”er", "Î”et",
+                                                   "Î”en"))
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1536: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC”).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1536 ...ormat("Element", "Î”er", "Î”et", "Î”en")
+                                                  )
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1603: LaTeX Error: Invalid UTF-8 byte sequence (â\lst@ECˆ\lst@EC†).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1603     print(f"Maximum âˆ†i:
+                                 {max_delta_i[0]:.4f} and {max_delta_i[1]:.4...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1604: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¸).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1604     print(f"Occurs at true anomaly Î¸ 
+                                             = {theta_imax[0]:.2f} and {thet...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1605: LaTeX Error: Invalid UTF-8 byte sequence (Ï\lst@EC‰).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1605     print(f"Here, Ï‰ 
+                            = {w_imax[0]:.2f} and {w_imax[0]:.2f} radians")
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1608: LaTeX Error: Invalid UTF-8 byte sequence (Ï\lst@EC‰).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1608 ...km)', 'e', 'i (rad)', 'RAAN (rad)', 'Ï‰ 
+                                                  (rad)', 'Î¸ (rad)']
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1608: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¸).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1608 ...i (rad)', 'RAAN (rad)', 'Ï‰ (rad)', 'Î¸ 
+                                                  (rad)']
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1617: LaTeX Error: Invalid UTF-8 byte sequence (â\lst@ECˆ\lst@EC†).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1617 ...le(f'Change in {labels[i]} due to âˆ†V')
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1618: LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC¸).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1618             plt.xlabel('True Anomaly Î¸ 
+                                               (deg)')
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/alexa/OneDrive - The University of Auckland/Desktop/Aerospace 720/Themission.tex:1619: LaTeX Error: Invalid UTF-8 byte sequence (â\lst@ECˆ\lst@EC†).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1619             plt.ylabel(f'âˆ†{
+                                    labels[i]}')
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23] [24]
+runsystem(latexminted cleantemp  --timestamp 20250502230809 5C6DB7F435293372D75ADA1E2BDFC22D)...disabled (restricted).
+
+ (Themission.aux) ) 
 Here is how much of TeX's memory you used:
- 22432 strings out of 478582
- 464666 string characters out of 2844344
- 695163 words of memory out of 3000000
- 40307 multiletter control sequences out of 15000+600000
- 470321 words of font info for 30 fonts, out of 8000000 for 9000
+ 27389 strings out of 478582
+ 601248 string characters out of 2844344
+ 1238068 words of memory out of 3000000
+ 45100 multiletter control sequences out of 15000+600000
+ 569583 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,0n,90p,544b,261s stack positions out of 10000i,1000n,20000p,200000b,80000s
-C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/minted\minted.sty:33:  ==> Fatal error occurred, no output PDF file produced!
+ 84i,12n,90p,544b,1671s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <C:\Users\alexa\AppData\Local\MiKTeX\fonts/pk/ljfour/public/wasy/dpi600\wasy6.pk>{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy5.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt8.pfb>
+Output written on Themission.pdf (24 pages, 1394345 bytes).
+PDF statistics:
+ 248 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+
